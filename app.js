@@ -160,8 +160,7 @@ function seat_type(s) {
 
 console.log(seat_type(s));
 
-
-
+/********************************************************************************/
 /*Homework 2*/
 /*a, b, c. Перевірте істинність висловлювання:  a < b < c*/
 
@@ -229,7 +228,10 @@ function mostFrequentElelment(arr) {
 console.log(mostFrequentElelment(arr));
 let mFreq = (arr.pop(mostFrequentElelment(arr)));
 console.log("most freq element:", mFreq);
-/// finish with removing the most frequent element from the array
+let filteredArr = arr.filter(function(element) {
+    return element !==mFreq;
+})
+console.log(filteredArr);
 
     
 
