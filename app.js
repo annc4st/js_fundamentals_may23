@@ -165,40 +165,40 @@
 /*Homework 2*/
 /*a, b, c. Перевірте істинність висловлювання:  a < b < c*/
 
-// let a = prompt("Enter 'a' number");
-// let b = prompt("Enter 'b' number");
-// let c = prompt("Enter 'c' number");
+let a = prompt("Enter 'a' number");
+let b = prompt("Enter 'b' number");
+let c = prompt("Enter 'c' number");
 
-// if (a < b < c) {
-//     console.log("true");
-// } else {
-//     console.log("false");
-//     }
+if (a < b < c) {
+    console.log("true");
+} else {
+    console.log("false");
+    }
 
-// /* 2 */
-// let x = 1;
-// let y = 2;
+/* 2 */
+let x = 1;
+let y = 2;
 
-// let res1 = String(x) + String(y); // Допишіть код, необхідно використовувати змінні x і y
-// console.log(res1); // ""12""
-// console.log(typeof res1); // ""string""
+let res1 = String(x) + String(y); // Допишіть код, необхідно використовувати змінні x і y
+console.log(res1); // ""12""
+console.log(typeof res1); // ""string""
 
-// let res2 = String(x ===1) + String(y); // Допишіть код, необхідно використовувати змінні x і y
-// console.log(res2); // ""true2""
-// console.log(typeof res2); // ""string""
+let res2 = String(x ===1) + String(y); // Допишіть код, необхідно використовувати змінні x і y
+console.log(res2); // ""true2""
+console.log(typeof res2); // ""string""
 
-// let res3 = y > x;// Допишіть код, необхідно використовувати змінні x і y
-// console.log(res3); // true
-// console.log(typeof res3); // ""boolean""
+let res3 = y > x;// Допишіть код, необхідно використовувати змінні x і y
+console.log(res3); // true
+console.log(typeof res3); // ""boolean""
 
-// let res4 = (x + y)* "asd";// Допишіть код, необхідно використовувати змінні x і y
-// console.log(res4); // NaN
-// console.log(typeof res4); // ""number""
+let res4 = (x + y)* "asd";// Допишіть код, необхідно використовувати змінні x і y
+console.log(res4); // NaN
+console.log(typeof res4); // ""number""
 
-//  /*3 Використовуючи функцію prompt() ..*/
+ /*3 Використовуючи функцію prompt() ..*/
 
-// let isAdult = prompt("Enter your age");
-// (isAdult >= 18) ? console.log("You are adult"): console.log("You are too young");
+let isAdult = prompt("Enter your age");
+(isAdult >= 18) ? console.log("You are adult"): console.log("You are too young");
 
 /*4 */
 let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5];
@@ -229,85 +229,85 @@ function mostFrequentElelment(arr) {
 console.log(mostFrequentElelment(arr));
 let mFreq = (arr.pop(mostFrequentElelment(arr)));
 console.log("most freq element:", mFreq);
-let newArray = arr.map( x =! mFreq);
-console.log(newArray);
 
+let filteredArr = arr.filter(function(element) {
+    return element !==mFreq;
+})
+console.log(filteredArr);
     
-// let data = ... // 5
- 
-// console.log(arr); // [4, 2, 1, 6, 3, 2]
+
 /*5*/
-// let aSide = prompt("Enter 'a' side");
+let aSide = prompt("Enter 'a' side");
 
-// if(isNaN(aSide)){
-// 	console.log("Incorrect data. The side is not a number");
-//  }else{
-// 	console.log("Data ok");
-//  }
+if(isNaN(aSide)){
+	console.log("Incorrect data. The side is not a number");
+ }else{
+	console.log("Data ok");
+ }
 
-// let bSide = prompt("Enter 'b' side");
-// if(isNaN(bSide)){
-// 	console.log("Incorrect data. The side is not a number");
-//  }else{
-// 	console.log("Data ok");
-//  }
-// let cSide = prompt("Enter 'c' side");
-// if(isNaN(cSide)){
-// 	console.log("Incorrect data. The side is not a number");
-//  }else{
-// 	console.log("Data ok");
-//  }
+let bSide = prompt("Enter 'b' side");
+if(isNaN(bSide)){
+	console.log("Incorrect data. The side is not a number");
+ }else{
+	console.log("Data ok");
+ }
+let cSide = prompt("Enter 'c' side");
+if(isNaN(cSide)){
+	console.log("Incorrect data. The side is not a number");
+ }else{
+	console.log("Data ok");
+ }
 
-// let p = (aSide + bSide + cSide)/2;
-// let areaTriangle =  Math.sqrt(p*(p-aSide)*(p - bSide)*(p-cSide));
-// console.log("Ploshcha trykutnyka: ", areaTriangle.toFixed(3));
+let p = (aSide + bSide + cSide)/2;
+let areaTriangle =  Math.sqrt(p*(p-aSide)*(p - bSide)*(p-cSide));
+console.log("Ploshcha trykutnyka: ", areaTriangle.toFixed(3));
 
-// let a2 = Math.pow(aSide, 2);
-// let b2 = Math.pow(bSide, 2);
-// let c2 = Math.pow(cSide, 2);
+let a2 = Math.pow(aSide, 2);
+let b2 = Math.pow(bSide, 2);
+let c2 = Math.pow(cSide, 2);
 
-// if (a2 == (b2 + c2) ||
-// b2 == (a2 + c2) ||
-// c2 == (a2 + b2)) {
-//     console.log("The triangle is right");
+if (a2 == (b2 + c2) ||
+b2 == (a2 + c2) ||
+c2 == (a2 + b2)) {
+    console.log("The triangle is right");
 
-// } else {
-//     console.log("The triangle is not right");
-// }
+} else {
+    console.log("The triangle is not right");
+}
 
 
 // /* 6.
 // Напишіть функцію calc(a, b, op), яка виконує над числами a і b одну із арифметичних операцій та повертає її результат. 
 // Вид операції визначається цілим числом op: 1 – віднімання, 2 – добуток, 3 – ділення, інші значення – додавання.*/
 
-// function calc(a, b, op) {
-//     if (op == 1) {
-//         return a - b;
-//     } else if (op == 2) {
-//         return a * b;
-//     } else if (op == 3) {
-//         return a / b;
-//     } else {
-//         return a + b;
-//     }
-// }
-// console.log(calc(4, 5, 1));
+function calc(a, b, op) {
+    if (op == 1) {
+        return a - b;
+    } else if (op == 2) {
+        return a * b;
+    } else if (op == 3) {
+        return a / b;
+    } else {
+        return a + b;
+    }
+}
+console.log(calc(4, 5, 1));
 
 // /*7 Напишіть функцію findUnique(arr), яка приймає масив arr і перевіряє на унікальність його елементи. Якщо всі елементи масиву унікальні (не мають дублів), то функція поверне true, інакше - false.
-// findUnique([1, 2, 3, 5, 3]);  // => false
-// findUnique([1, 2, 3, 5, 11]); // => true*/
+findUnique([1, 2, 3, 5, 3]);  // => false
+findUnique([1, 2, 3, 5, 11]); // => true*/
 
-// function findUnique(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         for (let j = i + 1; j < arr.length; j++) {
-//             if (arr[i] == arr[j]) {
-//                 return false;
-//             }
-//         }
-//     }
-//     return true;
-// }
-// console.log(findUnique([1, 2, 3, 5]));
+function findUnique(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+console.log(findUnique([1, 2, 3, 5]));
 
 
 
